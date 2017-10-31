@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mageplaza::some_menu_description" title="Mageplaza" module="Mageplaza_Helloworld"
+             sortOrder="11" resource="Webinse_FAQ6::faq"/>
+
+        <add id="Mageplaza::submenu" title="Mageplaza Index" module="Mageplaza_Helloworld"
+             sortOrder="15" resource="Webinse_FAQ6::questions"
+             action="mageplaza_helloworld/index/notindex" parent="Mageplaza::some_menu_description"/>
+    </menu>
+</config>

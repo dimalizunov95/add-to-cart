@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <hello>
+            <general>
+                <enable>1</enable>
+                <display_text>Hello World</display_text>
+            </general>
+        </hello>
+        <helloworld>
+            <catalog_page>
+                <enable>0</enable>
+                <popup_enable>1</popup_enable>
+                <ajax_cart_enable>1</ajax_cart_enable>
+            </catalog_page>
+        </helloworld>
+    </default>
+</config>

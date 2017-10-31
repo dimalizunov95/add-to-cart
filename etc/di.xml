@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Mageplaza\Helloworld\Controller\Index\Index">
+        <plugin name="MageplazaHelloworldControllerIndexIndex"
+                sortOrder="10" type="Mageplaza\Helloworld\Plugin\PostPlugin"/>
+    </type>
+    <type name="Magento\Catalog\Controller\Category\View">
+        <plugin name="MagentoCatalogcontrollerCategoryView"
+                sortOrder="10" type="Mageplaza\Helloworld\Plugin\CoreCategoryPlugin"/>
+    </type>
+    <!--<type name="Magento\Checkout\Controller\Cart\Add">
+        <plugin name="MagentoCheckoutControllerCartAdd"
+                sortOrder="10" type="Mageplaza\Helloworld\Plugin\Cart\AddPlugin"/>
+    </type>-->
+    <preference for="Magento\Checkout\Controller\Cart\Add"
+                type="Mageplaza\Helloworld\Controller\Cart\Add" />
+</config>

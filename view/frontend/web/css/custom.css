@@ -1,0 +1,26 @@
+.product_view {
+    text-decoration: none;
+    display: block;
+    background: #1979c3;
+    border: 1px solid #1979c3;
+    color: #ffffff;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+.product_view:hover {
+    background: #006bb4;
+    border: 1px solid #006bb4;
+    color: #ffffff;
+}
+
+.product_view:focus {
+    background: #006bb4;
+    border: 1px solid #006bb4;
+    color: #ffffff;
+}

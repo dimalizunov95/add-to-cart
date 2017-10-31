@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+        <!--<attribute name="class" value="my-body-class" />-->
+        <!--<attribute name="class" xsi:type="helper" helper="Mageplaza\Helloworld\Helper\Data::getColorPopupClass" />-->
+       <!-- <referenceContainer name="content">
+            <block class="Mageplaza\Helloworld\Block\Adminhtml\Regval"
+                   name="mageplaza_helloworld_index_notindex" template="Mageplaza_Helloworld::example.phtml"/>
+        </referenceContainer>-->
+    </body>
+</page>

@@ -1,0 +1,38 @@
+<?php
+    $add_to_cart_enabled = $block->getCoreConfigData('helloworld/catalog_page/enable');
+    $add_to_cart_popup = $block->getCoreConfigData('helloworld/catalog_page/popup_enable');
+    $add_to_cart_ajax = (int)$block->getCoreConfigData('helloworld/catalog_page/ajax_cart_enable');
+?>
+
+
+<body>
+
+
+
+
+    <script>
+        window.add_to_cart_ajax = <?php echo $add_to_cart_ajax; ?>;
+        window.add_to_cart_popup = <?php echo $add_to_cart_popup; ?>
+    </script>
+
+
+
+    <script type="text/x-magento-init">
+    {
+        "li.item.product.product-item": {
+            "category.page.product.fancy": {
+                "value1": "val1",
+                "value2": "val2"
+            }
+        },
+        "#for_popup": {
+            "custom": {}
+        }
+    }
+    </script>
+
+
+
+
+
+</body>

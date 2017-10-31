@@ -1,0 +1,8 @@
+<h2> Hello i'm custom </h2>
+<p><?php echo $block->getDisplayText(); ?></p>
+<p>
+    <?php echo $block->getConfig()->getValue(
+        'helloworld/general/display_text',
+        \Magento\Store\Model\ScopeInterface::SCOPE_STORE
+    ); ?>
+</p>

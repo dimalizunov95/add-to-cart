@@ -1,0 +1,20 @@
+{
+  "name": "mageplaza/module-helloworld",
+  "description": "Magento 2 module addToCartPopup and others",
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Magento\\SampleNewPage\\": ""
+    }
+  }
+}

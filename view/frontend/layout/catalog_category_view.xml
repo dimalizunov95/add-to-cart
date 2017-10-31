@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--category cat.en1  with id 43-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!--<script src="Mageplaza_Helloworld::js/alert.js"/>-->
+        <css src="Mageplaza_Helloworld::css/custom.css"/>
+        <css src="Mageplaza_Helloworld::css/jquery.fancybox.css"/>
+        <css src="Mageplaza_Helloworld::css/jquery.fancybox-buttons.css"/>
+        <!--<script src="Mageplaza_Helloworld::js/custom.js"/>-->
+    </head>
+    <body>
+        <referenceContainer name="header-wrapper">
+            <block class="Mageplaza\Helloworld\Block\Coreregistry"
+                   name="helloworld.coreregistry" template="category.phtml"/>
+        </referenceContainer>
+
+
+
+        <referenceContainer name="content">
+            <block class="Magento\Catalog\Block\Product\ListProduct"
+                   name="category.products.list" as="product_list"
+                   template="Mageplaza_Helloworld::product/list.phtml" />
+        </referenceContainer>
+
+        <!--<referenceContainer name="header-wrapper">
+            <block class="Mageplaza\Helloworld\Block\Coreregistry"
+                   name="helloworld.coreregistry" template="Mageplaza_Helloworld::product/list.phtml"/>
+        </referenceContainer>-->
+        <!--<argument name="label" xsi:type="helper" helper="Vendor\Module\Helper\Data::getLabel"></argument>-->
+        <!--<argument name="class" xsi:type="helper" helper="Mageplaza\Helloworld\Helper\Data::getColorPopupClass"></argument>-->
+    </body>
+</page>
