@@ -46,7 +46,7 @@ $_helper = $this->helper('Magento\Catalog\Helper\Output');
         <ol class="products list items product-items">
             <?php /** @var $_product \Magento\Catalog\Model\Product */ ?>
             <?php foreach ($_productCollection as $_product): ?>
-                <?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="item product product-item">' : '</li><li class="item product product-item">' ?>
+                <?= /* @escapeNotVerified */ ($iterator++ == 1) ? '<li class="item product product-item" data-fancybox-group="mygroup">' : '</li><li class="item product product-item" data-fancybox-group="mygroup">' ?>
                 <div class="product-item-info" data-container="product-grid">
                     <?php
                     $productImage = $block->getImage($_product, $image);

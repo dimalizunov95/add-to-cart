@@ -22,7 +22,13 @@ define([
 
             var a = this.getElementsByClassName('product_view')[0];
             var href = a.href;
-            $.fancybox({
+
+            /*$(".product-item").fancybox({
+                openEffect	: 'none',
+                closeEffect	: 'none'
+            });*/
+
+            $('li.item.product.product-item').fancybox({
                 href: href,
                 type: "iframe"
             });
