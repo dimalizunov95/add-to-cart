@@ -1,5 +1,5 @@
 {
-  "name": "mageplaza/module-helloworld",
+  "name": "Mageplaza/module-Helloworld",
   "description": "Magento 2 module addToCartPopup and others",
   "require": {
     "php": ">=5.4.0"
@@ -14,7 +14,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "Magento\\SampleNewPage\\": ""
+      "Mageplaza\\Helloworld\\": ""
     }
   }
 }
